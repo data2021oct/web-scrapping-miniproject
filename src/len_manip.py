@@ -65,3 +65,14 @@ def sentimental(col):
     total.append(polaridad["pos"])
     total.append(polaridad["compound"])
     return total
+
+def cuentastok(col):
+    """
+    recibe un string (pensado para dataframes)
+    cuenta las palabras de este string
+    devuelve un lista con la cuenta(s)
+    """
+    tot = []
+    for c in col:
+        tot.append(len(c.split(" ")))
+    return sum(tot)
