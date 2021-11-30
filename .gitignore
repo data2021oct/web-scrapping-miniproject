@@ -1,3 +1,5 @@
 chromedriver.exe
 /.ipynb_checkpoints
 minipro_dos.ipynb
+/src/chromedriver.exe
+/src/__pycache__
